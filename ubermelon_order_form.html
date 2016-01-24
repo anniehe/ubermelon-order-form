@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
-    <header>
+    <head>
         <title>Ubermelon Order Form</title>
-    </header>
+    </head>
 
     <body>
         <h1>Order!</h1>
+
         <table>
             <thead>
                 <th colspan="2">Prices</th>
@@ -14,7 +15,6 @@
                     <th>Price per lb</th>
                 </tr>
             </thead>
-
             <tbody>
                 <tr>
                     <td>Watermelon</td>
@@ -41,7 +41,7 @@
 
         <p>Place your orders here! You know you want to.</p>
 
-        <form action="https://ubermelon-order-form.herokuapp.com/process" method="POST">
+        <form action="https://ubermelon-order-form.herokuapp.com/process" method="get">
             <label>First Name: 
                 <input type="text" name="firstname">
             </label>
@@ -84,14 +84,13 @@
             <label><input type="checkbox" name="stats" value="hedgehog">Hedgehog</label> &nbsp;
             <label><input type="checkbox" name="stats" value="balloonicorn">Balloonicorn</label> &nbsp;
             <label><input type="checkbox" name="stats" value="yak">Yak</label> &nbsp;                
-            <br>
+            <br><br>
 
             <input type="submit">
 
         </form>
-
+        <br>
         <footer>*Quantities given are by the flat.</footer>
 
     </body>
-
 </html>
